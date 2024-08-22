@@ -1,4 +1,26 @@
 {
+  "name": "biblioteca-virtual",
+  "version": "1.0.0",
+  "main": "Server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js",
+    "dev": "node --watch --no-warnings Server.js",
+    "titulo": "string",
+    "autor": "string",
+    "ano": "number",
+    "anoInicial": "number",
+    "anoFinal": "number",
+    "notaInicial": "number",
+    "notaFinal": "number",
+    "lido": "boolean",
+    "nota": "number"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "fastify": "^4.28.1"
   }
