@@ -15,7 +15,14 @@ server.post('/livros', (request, reply) => {
         lido
     })
 
-
+    server.get('/livros', (request) => {
+        const {autor, titulo, nota, lido, ano, anoInicial, anoFinal,notaInicial,notaFinal} = request.query
+    
+        const livro = database.list(autor, lido, ano, nota, titulo, anoInicial, anoFinal,notaInicial,notaFinal)
+    
+    
+        return livro
+    })
     return reply.status(204).send()
 })
 
