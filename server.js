@@ -26,4 +26,18 @@ server.post('/livros', (request, reply) => {
     return reply.status(204).send()
 })
 
+server.put('/livros/:id', (request, reply) => {
+    const livroID = request.params.id
+    const { titulo, autor, ano, lido, nota } = request.body
+    database.update(livroID, {
+        titulo,
+        autor,
+        ano,
+        nota,
+        lido
+    })
+    return reply.status(204).send()
+})
+
+
 server.listen({ port: 3333 })

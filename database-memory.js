@@ -43,4 +43,8 @@ export class DatabaseMemory {
 
         this.#livros.set(livroID,livro)
     }
+
+    update(id,livro) {
+        this.#livros.set(id,livro)
+    }
 }
