@@ -46,5 +46,10 @@ export class DatabaseMemory {
 
     update(id,livro) {
         this.#livros.set(id,livro)
-    }
+ 
+   }
+    
+   delete(id) {
+    this.#livros.delete(id)
+}
 }

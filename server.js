@@ -40,4 +40,17 @@ server.put('/livros/:id', (request, reply) => {
 })
 
 
+
+
+
+
+server.delete('/livros/:id',(request, reply) => {
+    const livroID = request.params.id
+    
+    database.delete(livroID)
+
+    return reply.status(204).send()
+})
+
+
 server.listen({ port: 3333 })
