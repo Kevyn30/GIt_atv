@@ -34,7 +34,7 @@ export class DatabaseMemory {
 //                    return livro.titulo.toLowerCase().includes(titulo.toLowerCase())
 //                }
                 
-                return true
+                else{ return true}
             })
     }
 

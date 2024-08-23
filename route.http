@@ -1,4 +1,4 @@
-POST http://locallhost:3333/livros
+POST http://localhost:3333/livros
 Content-Type: application/json
 
 {
@@ -23,7 +23,7 @@ Content-Type: application/json
 
 GET http://localhost:3333/livros
 ###
-PUT http://localhost:3333/livros
+PUT http://localhost:3333/livros/
 Content-Type: application/json
 
 {
