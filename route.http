@@ -1,0 +1,39 @@
+POST http://locallhost:3333/livros
+Content-Type: application/json
+
+{
+    "titulo":"auto da compadecida",
+    "autor": "graça aranha",
+    "ano":"1998",
+    "Lido": false,
+    "nota": 1.2
+}
+###
+POST http://localhost:3333/livros
+Content-Type: application/json
+
+{
+    "titulo":"auto da compadecida",
+    "autor": "graça aranha",
+    "ano":"1998",
+    "Lido": false,
+    "nota": 1.2
+}
+###
+
+GET http://localhost:3333/livros
+###
+PUT http://localhost:3333/livros
+Content-Type: application/json
+
+{
+    "titulo":"pokedex",
+    "autor": "Ash",
+    "ano":"2024",
+    "Lido": false,
+    "nota": 10
+}
+###
+DELETE http://localhost:3333/livros/
+
+
